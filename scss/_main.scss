@@ -1,0 +1,42 @@
+.main {
+    background-color: rgba(225, 225, 255, 0.8);
+    flex-grow: 1;
+}
+
+.main__wrapper {
+    display: flex;
+}
+
+.title {
+    font-size: 1.5rem;
+    padding: 5px 0 0 5px;
+}
+
+.text {
+    font-size: 1rem;
+    padding: 5px 0 5px 15px;
+}
+
+.subtext {
+    font-size: 1rem;
+    padding: 10px 5px 5px 15px;
+    color: rgba(80, 80, 90, 0.8);
+}
+
+.about,
+.technologies {
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.about__inner_section,
+.technologies__inner_section {
+    width: 335px;
+    @include backgroundAndBorder;
+}
+
+.myWorks {
+    border: 1px solid red;
+    height: 100px;
+}

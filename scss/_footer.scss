@@ -1,0 +1,15 @@
+.footer {
+    background-color: rgb(80, 80, 90);
+    border-top: 2px solid gray;
+    flex-shrink: 0;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+}
+
+.footer__container {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}

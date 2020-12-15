@@ -1,3 +1,10 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+// icons font
 @font-face {
     font-family: 'icomoon';
     src: url('../fonts/icomoon.eot?nzbpso');
@@ -26,8 +33,9 @@
     content: "\eab0";
     font-size: 2rem;
     position: absolute;
-    top: 0px;
-    left: 30px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     transition: color, 0.3s;
     @media (max-width: 500px) {
         font-size: 1rem;
@@ -40,13 +48,14 @@
     content: "\e930";
     font-size: 2rem;
     position: absolute;
-    top: 0px;
-    right: 30px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     transition: color, 0.3s;
     @media (max-width: 500px) {
         font-size: 1rem;
         position: relative;
-        right: 5px;
+        left: -5px;
     }
 }
 

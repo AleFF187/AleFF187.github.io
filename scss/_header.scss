@@ -1,0 +1,124 @@
+.header {
+    background-image: url(../images/header_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 100px rgb(80, 80, 90);
+    color: #fff;
+    height: 100px;
+    margin-bottom: 100px;
+    @media (max-width: 380px) {
+        box-shadow: 0 80px rgb(80, 80, 90);
+        margin-bottom: 80px;
+    }
+}
+
+.header__container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+// name and profession
+.header__title {
+    user-select: none;
+    margin: 100px 0 0 10px;
+    @media (max-width: 830px) {
+        width: 155px;
+        margin: 100px 0 0 10px;
+    }
+    @media (max-width: 380px) {
+        width: 100px;
+    }
+}
+
+.header__title_name {
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+    padding: 10px 0 5px;
+    & span {
+        color: tomato;
+    }
+    @media (max-width: 850px) {
+        font-size: 1.5rem;
+    }
+}
+
+.header__title_profession {
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    @media (max-width: 850px) {
+        font-size: 0.8rem;
+    }
+    @media (max-width: 380px) {
+        display: none;
+    }
+}
+
+// GitHub and others links
+.header__links {
+    display: flex;
+    margin: 110px auto 0;
+    span {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    @media (max-width: 630px) {
+        margin: 110px 0 0;
+    }
+    @media (max-width: 500px) {
+        flex-direction: column;
+        text-align: left;
+    }
+}
+
+.header__links_wrapper {
+    width: 105px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    padding: 40px 0 0;
+    @media (max-width: 500px) {
+        text-align: left;
+        padding: 10px 0 0 10px;
+        width: 100px;
+    }
+}
+
+.header__link_github,
+.header__link_works {
+    text-decoration: none;
+    color: inherit;
+    transition: color, 0.3s;
+    &:hover {
+        color: gold;
+        transition: color, 0.3s;
+    }
+}
+
+// photo
+.header__image {
+    width: 150px;
+    height: 150px;
+    border: 10px solid rgb(210, 210, 210);
+    border-radius: 50%;
+    margin: 10px 10px 0 auto;
+    @media (max-width: 800px) {
+        width: 125px;
+        height: 125px;
+        margin: 35px 10px 0 0;
+    }
+    @media (max-width: 630px) {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @media (max-width: 380px) {
+        border-width: 5px;
+        top: -20px;
+    }
+}
