@@ -8,8 +8,31 @@
 }
 
 .footer__container {
-    height: 40px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: right;
+    @media (max-width: 400px) {
+        display: block;
+        text-align: center;
+    }
+}
+
+.footer__contacts_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & a {
+        text-decoration: none;
+    }
+    li+li {
+        margin-left: 10px;
+    }
+    @media (max-width: 400px) {
+        margin: 10px 0;
+    }
+}
+
+.footer__copyright {
+    margin-left: auto;
 }

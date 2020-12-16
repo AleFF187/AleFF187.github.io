@@ -13,14 +13,12 @@
 </head>
 
 <body>
-
     <header class="header">
         <div class="container header__container">
             <div class="header__title">
                 <h1 class="header__title_name"><span>А</span>лексей <span>Ф</span>едоров</h1>
-                <h2 class="header__title_profession">Frontend Developer</h2>
+                <p class="header__title_profession">Frontend Developer</p>
             </div>
-
             <div class="header__links">
                 <div class="header__links_wrapper">
                     <a class="header__link_github icon-github" href="https://github.com/AleFF187?tab=repositories" target="_blank" rel="nofollow noopener"><span>GitHub</span></a>
@@ -29,124 +27,54 @@
                     <a class="header__link_works icon-folder-open" href="https://aleff187.github.io/" target="_blank" rel="nofollow noopener"><span>Работы</span></a>
                 </div>
             </div>
-
             <img class="header__image" src="/images/header_photo.jpg" alt="My photo">
     </header>
-
-
     <main class="main">
-        <div class="container">
-
-            <div class="main__wrapper">
-
-                <aside class="about">
-
-                    <section class="about__inner_section about__myself">
-                        <p class="title">Обо мне</p>
-                        <ul>
-                            <li class="text">Высшее инженерное образование.</li>
-                            <li class="text">Опыт фриланса с 2019.</li>
-                        </ul>
-                        <details class="">
-                            <summary class="text">Опыт вне фронтенда</summary>
-                            <ul>
-                                <li class="subtext">Руководство проектами по внедрению в ИТ интеграции. <br> (15+ лет)</li>
-                                <li class="subtext">Продажи от розницы до B2B. <br>(10+ лет)</li>
-                            </ul>
-                        </details>
-                    </section>
-
-                    <section class="about__inner_section about__languages">
-                        <p class="title">Languages</p>
-                        <ul>
-                            <li class="text">Russian: native</li>
-                            <li class="text">English: B1</li>
-                        </ul>
-                    </section>
-
-                    <section class="about__inner_section about__contacts">
-                        <p class="title">Contacts</p>
-                        <ul>
-                            <li class="text">Call: +38 O5O 187 1847</li>
-                            <li class="text">Email:
-                                <script type="text/javascript">
-                                    var x1, x2, x3, x4, x5, x6, x7;
-                                    x1 = '<a href="';
-                                    x1 += 'mai';
-                                    x1 += 'lto:';
-                                    x2 = '&#97;&#108;&#101;&#102;&#101;&#100;&#46;&#100;&#101;&#118;';
-                                    x3 = '&#64;';
-                                    x4 = '&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;';
-                                    x5 = '">';
-                                    x6 = x2 + '&#64;' + x4;
-                                    x7 = '</a>';
-                                    document.write(x1 + x2 + x3 + x4 + x5 + x6 + x7);
-                                </script>
-                            </li>
-                            <li class="text">Telegram</li>
-                            <li class="text">
-                                <a href="https://t.me/frontend_css_html_js" target="_blank" rel="nofollow noopener">
-                                    My telegram channel
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section class="about__inner_section about__software">
-                        <p class="title">Software</p>
-                        <ul>
-                            <li class="text">Figma</li>
-                            <li class="text">Abobe Photoshop</li>
-                            <li class="text">Corel Draw</li>
-                            <li class="text">Visual Studio Code</li>
-                        </ul>
-                    </section>
-
-                </aside>
-
-                <div class="technologies">
-
-                    <section class="technologies__inner_section technologies__markup">
-                        <p class="title">HTML5 CSS3</p>
-                        <ul>
-                            <li class="text">Valid, cross-browser code (FF, Chrome, Edge).</li>
-                            <li class="text">Adaptive and responsive.</li>
-                            <li class="text">Semantically correct markup.</li>
-                            <li class="text">BEM methodology.</li>
-                            <li class="text">FlexBox, Grid.</li>
-                            <li class="text">Optimizing images.</li>
-                            <li class="text">Sprites, SVG.</li>
-                        </ul>
-                    </section>
-
-                    <section class="technologies__inner_section technologies__gulp">
-                        <p class="title">Gulp SASS</p>
-                        <ul>
-                            <li class="text">Automation and acceleration of processes.</li>
-                            <li class="text">File minification.</li>
-                        </ul>
-                    </section>
-
-                    <section class="technologies__inner_section technologies__javascript">
-                        <p class="title">Javascript/JQuery</p>
-                        <ul>
-                            <li class="text">Javascript code.</li>
-                            <li class="text">Customized jQuery plugins.</li>
-                        </ul>
-                    </section>
-
-                </div>
-
-            </div>
-
-            <section class="myWorks"></section>
-
+        <div class="container main__container">
+            <section class="about inner_section">
+                <h2 class="title">Обо мне:</h2>
+                <ul>
+                    <li class="text">Опыт фриланса с 2019.</li>
+                    <li class="text">Английский: B1</li>
+                </ul>
+                <h3 class="subtitle">Вне фронтенда:</h3>
+                <ul>
+                    <li class="subtext">Высшее инженерное образование.</li>
+                    <li class="subtext">Руководство проектами по внедрению в ИТ интеграции<br>(15+ лет).</li>
+                    <li class="subtext">Продажи B2B в области ИТ, автоматизации и безопасности (10+ лет).</li>
+                </ul>
+            </section>
+            <section class="technologies inner_section">
+                <h2 class="title">ПО и технологии:</h2>
+                <ul>
+                    <li class="text">Валидная, семантически верная разметка (HTML5, CSS3, SASS).</li>
+                    <li class="text">Кроссбраузерно и адаптивно (без Safari).</li>
+                    <li class="text">Чистый код, БЭМ.</li>
+                    <li class="text">Верстка на Flexbox и Grid.</li>
+                    <li class="text">Оптимизация изображений и минификация файлов.</li>
+                    <li class="text">Автоматизация и ускорение разработки (Gulp, SASS).</li>
+                    <li class="text">Пишу код на JavaScript.</li>
+                </ul>
+            </section>
+            <section class="myWorks inner_section">slider</section>
         </div>
     </main>
-
     <footer class="footer">
         <div class="container footer__container">
-            <p class="copyright">© AleFF 2020</p>
+            <div class="footer__contacts">
+                <ul class="footer__contacts_list">
+                    <li class="footer__contacts_list-item">
+                        +38 050 187 1847
+                    </li>
+                    <li class="footer__contacts_list-item">
+                        <a class="icon-telegram" href="tg://resolve?domain=ale_ff"></a>
+                    </li>
+                    <li class="footer__contacts_list-item">
+                        <a class="icon-envelop" href="mailto:alefed.dev@gmail.com"></a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer__copyright">© AleFF 2021</p>
         </div>
     </footer>
 

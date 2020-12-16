@@ -59,16 +59,22 @@ body {
     }
 }
 
-.icon-github:hover:before,
-.icon-folder-open:hover:before {
-    color: gold;
-    transition: color, 0.3s;
-}
-
 .icon-envelop:before {
     content: "\e945";
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 .icon-telegram:before {
     content: "\ea95";
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.icon-github:hover:before,
+.icon-folder-open:hover:before,
+.icon-envelop:hover:before,
+.icon-telegram:hover:before {
+    color: gold;
+    transition: color, 0.2s;
 }
