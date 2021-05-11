@@ -5,259 +5,305 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Top Shop. Магазин красивой обуви.</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel=”icon” href=”favicon.ico” type=”image/x-icon”>
-    <title>Подбор шрифта для гравировки. Арт студия "Акцент"</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <div class="form__wrapper">
-        <form class="form">
-            <label class="form__label"> Введите текст:</label>
-            <input class="form__input" type="text">
-            <button class="form__button_submit btn__common" type="submit">Применить</button>
-            <button class="form__button_clear btn__common" type="reset">Очистить</button>
-        </form>
-    </div>
+    <header class="header">
+        <div class="container">
 
-    <div class="hidden-fonts">
-        <p class="hidden-fonts__legend">Эти шрифты Вы убрали из списка просмотра.</p>
-        <p class="hidden-fonts__legend">Что бы вернуть шрифт, нажмите на его номер.</p>
-        <div class="hidden-fonts__buttons btn">
-            <button class="btn__show-all btn__common">Показать все</button>
-        </div>
-    </div>
-
-    <div class="wrapper">
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 001</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
+            <div class="header__top">
+                <ul class="header__top_list">
+                    <li class="header__top_list-item">
+                        <a class="header__top_list-link icon-location2" href="##">
+                            <span> Санкт-Петербург, Невский 88</span>
+                        </a>
+                    </li>
+                    <li class="header__top_list-item">
+                        <a class="header__top_list-link icon-phone" href="tel:+78888888888">
+                            <span>+7 (888) 888-88-88</span>
+                        </a>
+                    </li>
+                    <li class="header__top_list-item">
+                        <a class="header__top_list-link icon-enter" href="##">
+                            <span>Вход / Регистрация</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <p class="font-card__text font_type_001">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 002</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
+            <div class="header__logo">
+                <img class="header__logo_img" src="/img/logo.svg" alt="логотип магазина">
+                <h1 class="header__logo_text">Магазин обуви и аксессуаров.</h1>
             </div>
-            <p class="font-card__text font_type_002">Введите текст.</p>
-        </div>
+            <nav class="header__menu">
+                <ul class="header__menu_button button ">
+                    <li class="button__item"></li>
+                    <li class="button__item"></li>
+                    <li class="button__item"></li>
+                </ul>
+                <ul class="header__menu_list">
+                    <li class="header__menu_item"> <a href="#1"> Женская обувь</a></li>
+                    <li class="header__menu_item"> <a href="#2"> Мужская обувь</a></li>
+                    <li class="header__menu_item"> <a href="#3"> Аксессуары</a></li>
+                    <li class="header__menu_item"> <a href="#4"> Средства для обуви</a></li>
+                    <li class="header__menu_item"> <a href="#5"> Условия гарантии</a></li>
+                </ul>
+            </nav>
 
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 003</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="container">
+            <section class="slider">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide slide">
+                            <div class="slide__wrapper">
+                                <p class="slide__banner">СКИДКИ ДО 25%</p>
+                                <h2 class="slide__title title">Спреи для кожи <br>от Leather D Corp.</h2>
+                                <p class="slide__text">Средства премиального класса для ухода за изделиями из натуральной кожи по самым выгодным ценам.</p>
+                                <a href="#!" class="slide__link icon-arrow-right2">Подробнее</a>
+                            </div>
+                            <img class="slide__img" src="/img/slider/slider001.png" alt="продукт по уходу за обувью">
+                        </div>
+
+                        <div class="swiper-slide slide">
+                            <div class="slide__wrapper">
+                                <p class="slide__banner">СКИДКИ ДО 25%</p>
+                                <h2 class="slide__title">Спреи для кожи <br>от Leather D Corp.</h2>
+                                <p class="slide__text">Средства премиального класса для ухода за изделиями из натуральной кожи по самым выгодным ценам.</p>
+                                <a href="#!" class="slide__link icon-arrow-right2">Подробнее</a>
+                            </div>
+                            <img class="slide__img" src="/img/slider/slider001.png" alt="продукт по уходу за обувью">
+                        </div>
+
+                        <div class="swiper-slide slide">
+                            <div class="slide__wrapper">
+                                <p class="slide__banner">СКИДКИ ДО 25%</p>
+                                <h2 class="slide__title">Спреи для кожи <br>от Leather D Corp.</h2>
+                                <p class="slide__text">Средства премиального класса для ухода за изделиями из натуральной кожи по самым выгодным ценам.</p>
+                                <a href="#!" class="slide__link icon-arrow-right2">Подробнее</a>
+                            </div>
+                            <img class="slide__img" src="/img/slider/slider001.png" alt="продукт по уходу за обувью">
+                        </div>
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </section>
+
+            <!-- promo 01 -->
+            <section class="promo">
+                <img class="promo__logo" src="/img/promo/logo01.svg" alt="логитип рекламной компании">
+                <h2 class="promo__title title">Обувная косметика<br>Сапфир</h2>
+                <p class="promo__text">
+                    Добро пожаловать в Waxa Shop — онлайн магазин средств по уходу за обувью. Мы рады предложить Вам лучшие в мире средства для обуви от легендарной французской фирмы сапфир. Косметика для обуви Saphir имеет столетнюю историю и безукоризненную репутацию,
+                    являясь эталоном качества среди любителей и профессионалов обувного ухода. В ассортименте обувной косметики нужно уметь ориентироваться. Чем отличаются хорошие средства, что входит в их состав и как правильно подобрать удачный набор?
+                </p>
+            </section>
+
+            <section class="collection">
+                <img class="collection__logo" src="/img/collection/collection_logo.svg" alt="логотип коллеции">
+                <h2 class="collection__title title point">Коллекция</h2>
+                <div class="collection__wrapper">
+
+                    <div class="collection__item item00 ">
+                        <div class="collection__item_inner">
+                            <h3 class="collection__item_title">Крем для обуви</h3>
+                            <a class="collection__item_link" href="#1">→</a>
+                        </div>
+                        <div class="collection__item_inner">
+                            <p class="collection__item_price">от 395 грн</p>
+                            <p class="collection__item_value">25+ товаров</p>
+                        </div>
+                    </div>
+
+                    <div class="collection__item item01 ">
+                        <div class="collection__item_inner">
+                            <h3 class="collection__item_title">Очиститель для обуви</h3>
+                            <a class="collection__item_link" href="#2">→</a>
+                        </div>
+                        <div class="collection__item_inner">
+                            <p class="collection__item_price">от 500 грн</p>
+                            <p class="collection__item_value">15+ товаров</p>
+                        </div>
+                    </div>
+
+                    <div class="collection__item item02 ">
+                        <div class="collection__item_inner">
+                            <h3 class="collection__item_title">Щетки для обуви</h3>
+                            <a class="collection__item_link" href="#3">→</a>
+                        </div>
+                        <div class="collection__item_inner">
+                            <p class="collection__item_price">от 95 грн</p>
+                            <p class="collection__item_value">35+ товаров</p>
+                        </div>
+                    </div>
+
+                    <div class="collection__item item03 ">
+                        <div class="collection__item_inner">
+                            <h3 class="collection__item_title">Средства для реставрации кожи </h3>
+                            <a class="collection__item_link" href="#4">→</a>
+                        </div>
+                        <div class="collection__item_inner">
+                            <p class="collection__item_price">от 595 грн</p>
+                            <p class="collection__item_value">80+ товаров</p>
+                        </div>
+                    </div>
+
+                    <div class="collection__item item04 ">
+                        <div class="collection__item_inner">
+                            <h3 class="collection__item_title">Воск для обуви</h3>
+                            <a class="collection__item_link" href="#5">→</a>
+                        </div>
+                        <div class="collection__item_inner">
+                            <p class="collection__item_price">от 250 грн</p>
+                            <p class="collection__item_value">10+ товаров</p>
+                        </div>
+                    </div>
+
+                    <div class="collection__item item05 ">
+                        <div class="collection__item_inner">
+                            <h3 class="collection__item_title">Краска для обуви</h3>
+                            <a class="collection__item_link" href="#1">→</a>
+                        </div>
+                        <div class="collection__item_inner">
+                            <p class="collection__item_price">от 280 грн</p>
+                            <p class="collection__item_value">85+ товаров</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="email">
+                <div class="email__img"></div>
+                <div class="email__wrapper">
+                    <p class="email__top-text">Подпишитесь на нас</p>
+                    <h2 class="email__title title">Получите безграничный доступ к самым выгодным предложениям</h2>
+                    <p class="email__text">Узнавайте первым о полезных статьях, акциях и эклюзивных предложениях!</p>
+                    <form class="email__form">
+                        <input class="email__form_input" type="text" placeholder="Введите ваш Email">
+                        <button class="email__form_button" type="submit">Подписаться</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- promo 02 -->
+            <section class="promo">
+                <img class="promo__logo" src="/img/promo/logo02.svg" alt="логотип рекламной компании">
+                <h2 class="promo__title title">Сапфир для обуви – брендовая забота</h2>
+                <p class="promo__text">Уход за обувью – рациональное вложение средств и сил. Поэтому косметика для обуви должна быть качественной. Сапфир – продукция, которой удалось заслужить безупречную репутацию среди пользователей и профессионалов по восстановлению обуви.
+                    Аксессуары для ухода от этого бренда служат долго, а химические составы исключительно положительно влияют на внешний вид изделий.</p>
+                <p class="promo__text">Средства от знаменитого французского бренда очень разнообразны. Линейки обувной косметики Сапфир включают разнообразные средства для очистки (пенки, шампуни, эмульсии), крема с широкой палитрой оттенков, аэрозоли и краски. Существуют специальные
+                    серии, разработанные для гладкой кожи, наборы для замши, комплекты для нубука и полный ассортимент всех возможных инструментов.</p>
+            </section>
+
+            <section class="journal">
+                <img class="journal__logo" src="/img/journal/journal_logo.svg" alt="логотип журнала">
+                <h3 class="journal__title title point">Журнал</h3>
+                <div class="journal__wrapper">
+                    <div class="journal__item">
+                        <img class="journal__item_img" src="/img/journal/8.jpg" alt="Уход за бородой и усами">
+                        <p class="journal__item_tag">Стиль</p>
+                        <p class="journal__item_date">4 май 2021</p>
+                        <p class="journal__item_title">Уход за бородой и усами в домашних условиях</p>
+                        <p class="journal__item_text">Мода поражает разными формами усов, щетиной, густой растительностью на лице, которые подчеркивают мужественность, аристократичность мужчин. Однако отрастить этот аксессуар – только</p>
+                        <a class="journal__item_link" href="#!">Читать дальше</a>
+                    </div>
+                    <div class="journal__item">
+                        <img class="journal__item_img" src="/img/journal/9.jpg" alt="Как покрасить кожаную обувь">
+                        <p class="journal__item_tag">Инструкции</p>
+                        <p class="journal__item_date">24 январь 2022</p>
+                        <p class="journal__item_title">Как покрасить кожаную обувь? Использование проникающей краски Saphir Teinture</p>
+                        <p class="journal__item_text">В основу этой инструкции лег опыт перекраски обуви в домашних условиях от любителя ухода за обувью. Автор достиг приемлемого результата,</p>
+                        <a class="journal__item_link" href="#!">Читать дальше</a>
+                    </div>
+                    <div class="journal__item">
+                        <img class="journal__item_img" src="/img/journal/10.jpg" alt="Обзор средств для кроссовок">
+                        <p class="journal__item_tag">Обзоры</p>
+                        <p class="journal__item_date">8 февраль 2022</p>
+                        <p class="journal__item_title">Обзор средств для кроссовок Tarrago Sneakers</p>
+                        <p class="journal__item_text">Сегодняшний пост посвящен серии продуктов для ухода за кроссовками Tarrago Sneakers Care. На данный момент это наиболее полная линейка специализированной продукции для любителей </p>
+                        <a class="journal__item_link" href="#!">Читать дальше</a>
+                    </div>
+                </div>
+                <button class="journal__button">Все записи</button>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__container">
+                <div class="footer__inner">
+                    <p class="footer__title">Компания</p>
+                    <ul class="footer__site-map footer__list">
+                        <li class="footer__site-map_item footer__item"><a href="#!1">О нас</a></li>
+                        <li class="footer__site-map_item footer__item"><a href="#!2">Акции и скидки</a></li>
+                        <li class="footer__site-map_item footer__item"><a href="#!3">Отзывы</a></li>
+                        <li class="footer__site-map_item footer__item"><a href="#!4">Как сделать заказ?</a></li>
+                        <li class="footer__site-map_item footer__item"><a href="#!5">Оплата и доставка</a></li>
+                    </ul>
+                </div>
+                <div class="footer__inner">
+                    <p class="footer__title">Уход за обувью</p>
+                    <ul class="footer__howto footer__list">
+                        <li class="footer__howto_item footer__item"><a href="#!1">Гладкая кожа</a></li>
+                        <li class="footer__howto_item footer__item"><a href="#!2">Замша, нубук, велюр</a></li>
+                        <li class="footer__howto_item footer__item"><a href="#!3">Лакированная кожа</a></li>
+                        <li class="footer__howto_item footer__item"><a href="#!4">Кожа рептилий</a></li>
+                        <li class="footer__howto_item footer__item"><a href="#!5">Уход за кроссовками</a></li>
+                    </ul>
+                </div>
+                <div class="footer__inner">
+                    <p class="footer__title">Контакты</p>
+                    <ul class="footer__contacts footer__list">
+                        <li class="footer__contacts_item footer__item">
+                            <a class="footer__contacts_item-link" href="tel:+78888888888">
+                                <span>+7 (888) 888-88-88</span>
+                            </a>
+                        </li>
+                        <li class="footer__contacts_item footer__item">
+                            <a class="footer__contacts_item-link" href="#!1">Наши офисы</a>
+                        </li>
+                        <li class="footer__contacts_item footer__item">
+                            <a class="footer__contacts_item-link" href="#!2">Напишите нам</a>
+                        </li>
+
+                        <li class="footer__contacts_item footer__item footer__payment">
+                            <p class="footer__payment_title">Варианты оплаты</p>
+                            <a class="footer__payment_maestro" href="#!3"></a>
+                            <a class="footer__payment_paypal" href="#!4"></a>
+                            <a class="footer__payment_visa" href="#!5"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <p class="font-card__text font_type_003">Введите текст.</p>
+
         </div>
+    </footer>
 
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 004</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_004">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 005</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_005">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 006</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_006">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 007</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_007">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 008</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_008">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 009</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_009">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 010</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_010">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 011</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_011">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 012</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_012">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 013</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_013">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 014</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_014">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 015</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_015">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 016</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_016">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 017</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_017">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 018</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_018">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 019</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_019">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 020</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_020">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 021</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_021">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 022</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_022">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 023</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_023">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 024</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_024">Введите текст.</p>
-        </div>
-
-        <div class="font-card">
-            <h2 class="font-card__title">Шрифт № 025</h2>
-            <div class="font-card__buttons btn">
-                <!-- <button class="btn__choose btn__common">Выбрать</button> -->
-                <button class="btn__hide btn__common"><span>Скрыть</span></button>
-            </div>
-            <p class="font-card__text font_type_025">Введите текст.</p>
-        </div>
-
-    </div>
-
-
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 
