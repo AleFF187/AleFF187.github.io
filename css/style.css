@@ -715,9 +715,6 @@ email */
     border-radius: 50%;
     margin-left: auto;
     padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .collection__item_link:hover {
