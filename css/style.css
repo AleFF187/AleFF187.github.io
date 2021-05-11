@@ -714,7 +714,6 @@ email */
     border: 1px solid var(--lightgray);
     border-radius: 50%;
     margin-left: auto;
-    padding: 5px;
 }
 
 .collection__item_link:hover {
