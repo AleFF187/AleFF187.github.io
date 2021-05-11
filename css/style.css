@@ -698,6 +698,7 @@ email */
 }
 
 .collection__item_link {
+    font-size: 1rem;
     width: 40px;
     min-width: 40px;
     height: 40px;
